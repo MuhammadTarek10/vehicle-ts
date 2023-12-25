@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "164901685876",
+    "firebase_url": "https://vehicle-ts-default-rtdb.firebaseio.com",
+    "project_id": "vehicle-ts",
+    "storage_bucket": "vehicle-ts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164901685876:android:36baaec348f848b11e1f21",
+        "android_client_info": {
+          "package_name": "com.tarek.vehicle_tracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdx6bk9ARmv-kBJwVIRcRfLGACOuEndeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
