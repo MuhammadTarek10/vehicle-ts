@@ -8,7 +8,9 @@ class MapHelper {
     return Marker(
       markerId: MarkerId(vehicle.id!),
       position: vehicle.position!,
-      infoWindow: InfoWindow(title: vehicle.name),
+      infoWindow: InfoWindow(
+          title: vehicle.name,
+          snippet: "Capacity: ${vehicle.capacity} | Speed: ${vehicle.speed}"),
       icon: icon != null
           ? BitmapDescriptor.fromBytes(icon)
           : BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueBlue),

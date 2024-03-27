@@ -10,9 +10,12 @@ final vehicleProvider = StreamProvider<List<Vehicle?>>((ref) {
   final sub = FirebaseDatabase.instance.ref().onValue.listen((event) {
     final data = event.snapshot.value as Map<dynamic, dynamic>;
     final List<Vehicle?> vehicles = [];
+
     data.forEach((key, value) {
-      vehicles.add(Vehicle.fromMap(key, value));
+      final vehicle = Vehicle.fromMap(key, value);
+      vehicles.add(vehicle);
     });
+
     controller.add(vehicles);
   });
 

@@ -48,6 +48,7 @@ class _HomeViewState extends State<HomeView> {
 
   Future<void> _getCurrentLocation() async {
     final position = await LocationHelper.getCurrentLocation();
+    print("Position: $position");
     setState(() {
       allMarkers['current'] = Marker(
         markerId: const MarkerId('current'),
